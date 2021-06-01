@@ -16,7 +16,7 @@ describe('Tier 1: Basic Fields, Class Methods, GET Routes', () => {
 
     describe('Basic Fields: place_name and category', () => {
       describe('place_name', () => {
-        xit('place_name is a string', async () => {
+        it('place_name is a string', async () => {
           const nyc = await Place.create({ place_name: 'NYC' });
           expect(nyc.place_name).to.equal(
             'NYC',

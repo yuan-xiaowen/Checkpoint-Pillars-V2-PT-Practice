@@ -14,7 +14,6 @@ Please read the Academic Integrity Policy (`pillars-academic-integrity-policy.md
 - Express Route Parameters
 - Express Status Codes
 - Sequelize Model Configuration
-- Sequelize Hooks
 - Sequelize Class Methods
 
 ## Starting
@@ -24,8 +23,7 @@ Please read the Academic Integrity Policy (`pillars-academic-integrity-policy.md
 - Clone your fork to your local machine.
 - Make sure your Postgres database is running!
 - Create two databases:
-  - Development Database: `createdb pillars`
-  - Test Database: `createdb pillars_test`
+  - Test Database: `createdb pillars_practice_test`
 - `npm install`
 - You can run `npm run test-dev` (windows users can run `npm run test-windows`) which will run the test suite continuously (`npm test` runs the tests only once).
 - In a separate terminal, you can run `npm run start-dev-seed` (windows users can run `npm run start-windows-server-seed` in one terminal and `npm run start-windows-client` in another) which will start [a development server on port 3000](http://localhost:3000). It will also re-seed the database with fresh data whenever you save a file. (If you'd rather not re-seed on every change, you can run `npm run start-dev` (or `npm run start-windows-server`) instead.)
