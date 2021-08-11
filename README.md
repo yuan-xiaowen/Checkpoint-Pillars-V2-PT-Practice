@@ -30,6 +30,5 @@ Please read the Academic Integrity Policy (`pillars-academic-integrity-policy.md
 ## IMPORTANT TIPS FOR SUCCESS
 
 - **READ ALL COMMENTS CAREFULLY.** Specs often assume you have read the comments.
-- After you have correctly defined the User model's `name` and `userType` fields, you can probably run all the remaining model and route specs in _any order_ (note, not 100% guaranteed). So if you get stuck, **move on and try some other specs**.
 - You should `git commit` and `git push` very frequently — even for each passing spec if you like! This will prevent you from losing work.
 - Please don't submit `console.log`s and other debug code.
