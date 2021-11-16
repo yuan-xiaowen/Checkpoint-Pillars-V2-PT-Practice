@@ -37,7 +37,7 @@ describe('Tier 1: Basic Fields, Class Methods, GET Routes', () => {
           // We shouldn't be able to create a place without a place_name 
           await expect(
             Place.create({}),
-            "We shouldn't be able to create a user without a place_name"
+            "We shouldn't be able to create a place without a place_name"
           ).to.be.rejected;
         });
 

@@ -6,7 +6,7 @@ const seed = async () => {
   const places = await Promise.all([
     Place.create({ place_name: 'NY STATE' }),
     Place.create({ place_name: 'Manhattan', category: 'CITY' }),
-    Place.create({ place_name: 'Brooklyn', userType: 'CITY' }),
+    Place.create({ place_name: 'Brooklyn', category: 'CITY' }),
   ]);
   const [
     NYS,

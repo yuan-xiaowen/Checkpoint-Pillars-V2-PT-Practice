@@ -57,8 +57,6 @@ describe('Tier 3: Virtual Fields, Route Parameters, DELETE Routes', () => {
   });
 
   describe('Express', () => {
-    let users;
-
     let nyc;
     beforeEach(async () => {
       await db.sync({ force: true });
@@ -77,7 +75,7 @@ describe('Tier 3: Virtual Fields, Route Parameters, DELETE Routes', () => {
         expect(nyc, 'new york city should have been deleted, but was not').to.equal(null);
       });
 
-      xit('responds with 404 if the user does not exist', async () => {
+      xit('responds with 404 if the place does not exist', async () => {
         const response = await app.delete('/api/places/121');
         expect(response.status).to.equal(404);
       });
