@@ -7,7 +7,9 @@ if (process.env.NODE_ENV !== 'testing') app.use(morgan('dev'));
 
 app.use(express.json());
 
+
 app.use('/api/places', require('./routes/places'));
+
 app.use('/api/*', (req, res) => {
   res.status(404).send({ message: 'Not Found' });
 });
